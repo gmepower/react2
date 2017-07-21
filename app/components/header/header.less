@@ -1,0 +1,124 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 160px;
+  width: 100%;
+  z-index: 2;
+  background: #ffffff;
+  .header {
+    height: 70px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    .logo {
+      height: 38px;
+      float: left;
+    }
+    a {
+      width: 80px;
+      display: flex;
+      float: right;
+      justify-content: space-between;
+     align-items: center;
+      .icon {
+
+        height: 37px;
+        img {
+          height: 37px;
+        }
+      }
+    }
+  }
+  .search {
+    height: 35px;
+    padding: 0 20px;
+    padding-bottom: 0.13333rem;
+    .input{
+      width: 75%;
+      height: 31px;
+      float: left;
+      background: #eeeff3;
+      border-radius: 10px;
+      position: relative;
+      i{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 7.5px;
+        left: 10px;
+      }
+      input{
+        position: absolute;
+        background: transparent;
+        border: transparent;
+        width:100%;
+       padding: 7.5px 0 7.5px 30px;
+      }
+    }
+    .sub{
+      width:20%;
+      height: 30px;
+      float: right;
+      position: relative;
+      border: 1px solid #f3981b;
+      border-radius: 10px;
+      color:#f3981b ;
+      box-sizing: border-box;
+      i{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 6.5px;
+        right: 10px;
+       transform: rotate(90deg);
+      }
+      span{
+        position: absolute;
+        left: 15px;
+       line-height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+  .nav {
+    height: 55px;
+    display: flex;
+    padding:0.42667rem  0.4rem 0 0.4rem; ;
+    li{
+      flex: 1;
+      text-align: center;
+      vertical-align: baseline;
+      list-style: none;
+      a{
+        display: block;
+        border-bottom: 5px solid #eeeff3;
+        line-height: 45px;
+        height: 40px;
+        position: relative;
+        i{
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom:0;
+          margin: 0 auto;
+          width: 1px;
+          height: 1px;
+        }
+      }
+    }
+    .active{
+      a{
+        color:#f3981b;
+       i{
+         border-top: 5px solid transparent;
+         border-bottom: 8px solid   #eeeff3;;
+         border-left: 5px solid transparent;
+         border-right: 5px solid transparent;
+       }
+      }
+
+
+    }
+  }
+
+}
