@@ -12,8 +12,8 @@ export default class Header extends Component {
     render() {
         return (<div className="container">
             <div className="header">
-                <img className="logo" src="http://m.mysipo.com/home/images/logo.png" alt=""/>
-                <a href="http://user.mysipo.com/memberv1/login?tourl=http://m.mysipo.com/index/index/course">
+                <Link className='logo-link' to='/'><img className="logo" src="http://m.mysipo.com/home/images/logo.png" alt=""/></Link>
+                <a className="user" href="http://user.mysipo.com/memberv1/login?tourl=http://m.mysipo.com/index/index/course">
                     <span>登录</span>
                     <div className="icon">
                         <img src="http://m.mysipo.com/home/images/avatar_default.png" alt=""/>
